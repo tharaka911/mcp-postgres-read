@@ -1,0 +1,19 @@
+{
+  "name": "postgres-read",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "bun build --compile --minify --sourcemap ./index.ts --outfile postgres-read",
+    "test": "bun run test_verification.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  }
+}
