@@ -28,3 +28,12 @@ A Model Context Protocol (MCP) server that provides read-only access to a Postgr
 - **`list_tables`**: List all tables in the public schema.
 - **`describe_table`**: Get schema details for a specific table.
 - **`query`**: Execute a read-only SQL query (`SELECT` only).
+
+## Troubleshooting
+
+### macOS: "App is damaged and can't be opened"
+If you see this error when running the binary on macOS, it's due to Gatekeeper blocking unsigned binaries. Run the following command to allow execution:
+
+```bash
+xattr -d com.apple.quarantine postgres-read-macos-arm64
+```
