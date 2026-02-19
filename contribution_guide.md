@@ -24,6 +24,11 @@ Before you start, please ensure you have set up your local development environme
     ```bash
     git commit -m "feat: add descriptive message about your changes"
     ```
+    We follow [Conventional Commits](https://www.conventionalcommits.org/):
+    - `feat:` for new features (triggers a minor release)
+    - `fix:` for bug fixes (triggers a patch release)
+    - `docs:`, `chore:`, `style:`, `refactor:`, `perf:`, `test:` for other changes (no release trigger by default)
+
 7.  **Push and Open a Pull Request**: Push your branch to your fork and open a pull request against the `main` branch of the original repository.
 
 ## Reporting Issues
