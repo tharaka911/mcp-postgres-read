@@ -4,7 +4,7 @@ This guide explains how to configure the `postgres-read` MCP server for use with
 
 ## Configuration File Locations
 
-- **Antigravity / Generic**: Check your client's documentation.
+- **Antigravity**: Configure via `mcp_config.json` (see Option 2 below).
 - **Claude Desktop (macOS)**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Cursor**: `~/.cursor/mcp.json` (or via Settings > Features > MCP)
 
@@ -60,6 +60,9 @@ Use this method if you downloaded a pre-built binary from the GitHub Releases pa
   }
 }
 ```
+
+> **Important:** When using the standalone executable, `args` must be an empty array `[]`. Do NOT use `bun run`.
+
 
 > **Note:**
 > 1. Replace `/absolute/path/to/downloaded/postgres-read-macos-arm64` with the actual path to the executable.
