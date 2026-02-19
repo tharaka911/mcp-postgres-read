@@ -51,7 +51,7 @@ Use this method if you downloaded a pre-built binary from the GitHub Releases pa
 {
   "mcpServers": {
     "postgres-read": {
-      "command": "/absolute/path/to/downloaded/postgres-read",
+      "command": "/absolute/path/to/downloaded/postgres-read-macos-arm64",
       "args": [],
       "env": {
         "DATABASE_URL": "postgresql://user:password@localhost:5432/dbname?sslmode=require"
@@ -62,8 +62,8 @@ Use this method if you downloaded a pre-built binary from the GitHub Releases pa
 ```
 
 > **Note:**
-> 1. Replace `/absolute/path/to/downloaded/postgres-read` with the actual path to the executable.
-> 2. Ensure the file has execute permissions (`chmod +x postgres-read`).
+> 1. Replace `/absolute/path/to/downloaded/postgres-read-macos-arm64` with the actual path to the executable.
+> 2. Ensure the file has execute permissions (`chmod +x postgres-read-macos-arm64`).
 > 3. On macOS, you may need to allow the executable to run in System Settings > Privacy & Security if it's blocked.
 
 ## Environment Variables

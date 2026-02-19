@@ -29,6 +29,7 @@
           "assets": [
             {
               "path": "postgres-read",
+              "name": "postgres-read-macos-arm64",
               "label": "postgres-read-macos-arm64"
             }
           ]
